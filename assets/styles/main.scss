@@ -4,7 +4,7 @@
 @import "variables";
 @import "fonts";
 
-html,body {width: 100%; height: 100%;}
+html,body {width: 100%; height: 100%; position: relative;}
 
 div {outline: 1px dotted red;}
 
@@ -22,3 +22,41 @@ visibility: hidden;
 .phenix-contaner {
 	width: 1170px; margin: 0 auto;
 }
+
+.background-section-1 {background: url(../img/backgrounds/bg-1.jpg) no-repeat center transparent;background-size: cover;}
+.background-section-2 {background: url(../img/backgrounds/bg-2.jpg) no-repeat center transparent;background-size: cover;}
+.background-section-3 {background: url(../img/backgrounds/bg-3.jpg) no-repeat center transparent;background-size: cover;}
+.background-section-4 {background: url(../img/backgrounds/bg-4.jpg) no-repeat center transparent;background-size: cover;}
+.background-section-5 {background: url(../img/backgrounds/bg-5.jpg) no-repeat center transparent;background-size: cover;}
+.background-section-6 {background: url(../img/backgrounds/bg-6.jpg) no-repeat center transparent;background-size: cover;}
+.background-section-7 {background: url(../img/backgrounds/bg-7.jpg) no-repeat center transparent;background-size: cover;}
+
+
+/* logo */
+.logo {
+	width: 301px; height: 84px;
+	position: absolute; z-index: 9999; left: 38px; top: 40px;
+	background: url(../img/logo.png) no-repeat center transparent;
+	background-size: 100% 100%;
+}
+/* /logo */
+
+a.button {
+	position: absolute; z-index: 9999; right: 38px; bottom: 40px; padding: 8px 66px;
+	border: 3px solid $border-button-color;
+	@include HelveticaNeueCyrBold; font-size: 20px; color: $button-font-color; text-decoration: none; 
+}
+
+/* phone number */
+a.phone-number {
+	position: absolute; z-index: 9999; right: 38px; top: 40px;
+	@include HelveticaNeueCyrRoman; font-size: 30px; color: $number-font-color; text-decoration: none;  
+}
+a.phone-number:before {
+	content: " ";
+	display: block;
+	width: 30px; height: 30px;
+	background: url(../img/icons/phone.png) no-repeat center transparent;background-size: cover;
+	position: absolute; top: 2px; left: -40px
+}
+/* /phone number */
