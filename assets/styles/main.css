@@ -2699,6 +2699,9 @@ html, body {
   position: relative;
   color: #fff; }
 
+div, li {
+  outline: 1px dotted red; }
+
 ol, ul {
   list-style: none; }
 
@@ -2821,6 +2824,7 @@ a.share {
   color: #dedede; }
 
 /* /share social */
+/* navigation */
 nav {
   display: inline-block;
   position: absolute;
@@ -2897,3 +2901,36 @@ nav {
         background: url(../img/nav/nav-4-hover.png) no-repeat transparent;
         background-size: 100px 100px;
         background-position: 0px 0px; }
+
+/* /navigation */
+/* galery */
+.galery {
+  position: absolute;
+  z-index: 9999;
+  width: 1200px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto; }
+
+.galery__img-container {
+  width: 280px;
+  height: 280px;
+  margin: 10px;
+  float: left; }
+  .galery__img-container img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .galery__img-container img:hover {
+    filter: saturate(200%);
+    -webkit-filter: saturate(200%);
+    -moz-filter: saturate(200%);
+    -o-filter: saturate(200%);
+    -ms-filter: saturate(200%); }
+
+/* /galery */
