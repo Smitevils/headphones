@@ -121,7 +121,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="section background-section-7"></div>
+		<div class="section background-section-7">
+			<div class="order-contacts-block">
+				<div class="order-block">
+					<h1>Закажите прямо сейчас за <span>1790</span> руб</h1>
+					<h4>Доставка по всей России от 250 рублей, самовывоз в Санкт-Петербурге</h4>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- Scripts -->
 	<script src="assets/scripts/js/jquery-2.1.4.min.js"></script>
@@ -131,7 +138,22 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['Page-1', 'Page-2', 'Page-2', 'Page-2', 'Page-5', 'Page-6', 'Page-7'],
-				menu: '#myMenu'
+				menu: '#myMenu',
+				afterLoad: function(anchorLink, index){
+					var loadedSection = $('#fullpage');
+					//using index
+					if(index == 7){
+						$('.button, .ui-help__mouse').removeClass('bounceIn animated')
+						$('.button, .ui-help__mouse').addClass('bounceOut animated')
+						$('.order-contacts-block').removeClass('bounceOutRight animated')
+						$('.order-contacts-block').addClass('bounceInRight animated')
+					} else {
+						$('.button, .ui-help__mouse, .order-contacts-block').removeClass('bounceOut animated')
+						$('.button, .ui-help__mouse').addClass('bounceIn animated')
+						$('.order-contacts-block').removeClass('bounceInRight animated')
+						$('.order-contacts-block').addClass('bounceOutRight animated')
+					}
+				}
 			});
 		});
 	</script>

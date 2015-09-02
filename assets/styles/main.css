@@ -2932,3 +2932,27 @@ nav {
     -ms-filter: saturate(200%); }
 
 /* /galery */
+/* order */
+.order-contacts-block {
+  position: absolute;
+  z-index: 9999;
+  width: 60%;
+  right: 0;
+  bottom: 80px; }
+  .order-contacts-block .order-block {
+    width: 50%;
+    text-align: center; }
+    .order-contacts-block .order-block h1 {
+      font-family: "RobotoCondensedLight", RobotoCondensedLight, sans-serif;
+      font-size: 62px;
+      color: #dedede;
+      font-weight: normal; }
+      .order-contacts-block .order-block h1 span {
+        font-family: "RobotoCondensedBold", RobotoCondensedBold, sans-serif;
+        font-weight: 800; }
+    .order-contacts-block .order-block h4 {
+      font-family: "RobotoCondensedLight", RobotoCondensedLight, sans-serif;
+      font-size: 24px;
+      color: #dedede; }
+
+/* /order */
