@@ -5,8 +5,9 @@
 @import "fonts";
 
 @import "mouse";
+@import "share";
 
-html,body {width: 100%; height: 100%; position: relative;}
+html,body {width: 100%; height: 100%; position: relative; color: #fff;}
 
 div {outline: 1px dotted red;}
 
@@ -43,11 +44,13 @@ visibility: hidden;
 }
 /* /logo */
 
+/* button bid */
 a.button {
 	position: absolute; z-index: 9999; right: 38px; bottom: 40px; padding: 8px 66px;
 	border: 3px solid $border-button-color;
 	@include HelveticaNeueCyrBold; font-size: 20px; color: $button-font-color; text-decoration: none; 
 }
+/* /button bid */
 
 /* phone number */
 a.phone-number {
@@ -62,3 +65,14 @@ a.phone-number:before {
 	position: absolute; top: 2px; left: -40px
 }
 /* /phone number */
+
+/* share social */
+a.share {
+	position: absolute; z-index: 9999;
+	bottom: 40px;
+	left: 38px;
+	@include HelveticaNeueCyrLight;
+	font-size: 16px;
+	text-decoration: none; color: $share-font-color;
+}
+/* /share social */
