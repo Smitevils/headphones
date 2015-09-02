@@ -2699,9 +2699,6 @@ html, body {
   position: relative;
   color: #fff; }
 
-div {
-  outline: 1px dotted red; }
-
 ol, ul {
   list-style: none; }
 
@@ -2746,6 +2743,22 @@ ol, ul {
 .background-section-7 {
   background: url(../img/backgrounds/bg-7.jpg) no-repeat center transparent;
   background-size: cover; }
+
+.section-text {
+  width: 540px;
+  padding-right: 38px;
+  position: absolute;
+  right: 0;
+  top: 160px;
+  font-family: "HelveticaNeueCyrLight", HelveticaNeueCyrLight, sans-serif;
+  color: #dedede; }
+
+h1.section-text__title {
+  font-size: 60px;
+  font-weight: normal; }
+
+p.section-text__text {
+  font-size: 30px; }
 
 /* logo */
 .logo {
@@ -2808,3 +2821,79 @@ a.share {
   color: #dedede; }
 
 /* /share social */
+nav {
+  display: inline-block;
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  margin-top: -200px; }
+  nav ul {
+    padding: 0;
+    margin: 20px 0; }
+    nav ul li {
+      height: 100px; }
+      nav ul li a {
+        padding-left: 90px;
+        line-height: 100px;
+        display: block;
+        height: 100%;
+        font-family: "HelveticaNeueCyrLight", HelveticaNeueCyrLight, sans-serif;
+        font-size: 20px;
+        color: #dedede;
+        text-decoration: none;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        font-size: 0px; }
+        nav ul li a:hover {
+          color: #946321; }
+      nav ul li:hover a {
+        font-size: 20px; }
+    nav ul li.characteristics {
+      background: url(../img/nav/nav-1.png) no-repeat center transparent;
+      background-size: 100px 100px;
+      background-position: 0px 0px; }
+      nav ul li.characteristics:hover {
+        background: url(../img/nav/nav-1-hover.png) no-repeat transparent;
+        background-size: 100px 100px;
+        background-position: 0px 0px; }
+      nav ul li.characteristics.active {
+        background: url(../img/nav/nav-1-hover.png) no-repeat transparent;
+        background-size: 100px 100px;
+        background-position: 0px 0px; }
+    nav ul li.technical {
+      background: url(../img/nav/nav-2.png) no-repeat center transparent;
+      background-size: 100px 100px;
+      background-position: 0px 0px; }
+      nav ul li.technical:hover {
+        background: url(../img/nav/nav-2-hover.png) no-repeat transparent;
+        background-size: 100px 100px;
+        background-position: 0px 0px; }
+      nav ul li.technical.active {
+        background: url(../img/nav/nav-2-hover.png) no-repeat transparent;
+        background-size: 100px 100px;
+        background-position: 0px 0px; }
+    nav ul li.photos {
+      background: url(../img/nav/nav-3.png) no-repeat center transparent;
+      background-size: 100px 100px;
+      background-position: 0px 0px; }
+      nav ul li.photos:hover {
+        background: url(../img/nav/nav-3-hover.png) no-repeat transparent;
+        background-size: 100px 100px;
+        background-position: 0px 0px; }
+      nav ul li.photos.active {
+        background: url(../img/nav/nav-3-hover.png) no-repeat transparent;
+        background-size: 100px 100px;
+        background-position: 0px 0px; }
+    nav ul li.order {
+      background: url(../img/nav/nav-4.png) no-repeat center transparent;
+      background-size: 100px 100px;
+      background-position: 0px 0px; }
+      nav ul li.order:hover {
+        background: url(../img/nav/nav-4-hover.png) no-repeat transparent;
+        background-size: 100px 100px;
+        background-position: 0px 0px; }
+      nav ul li.order.active {
+        background: url(../img/nav/nav-4-hover.png) no-repeat transparent;
+        background-size: 100px 100px;
+        background-position: 0px 0px; }
