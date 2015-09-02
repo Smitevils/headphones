@@ -10,3 +10,45 @@
 	top: 0;
 	right: -26px;
 }
+
+.socials {
+	position: absolute; z-index: 9998; bottom: 14px; left: 52px;
+	width: 200px; padding-left: 0;
+	opacity: 0; display: block; transform: matrix(0.7, 0, 0, 0.7, 0, 0);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.socials li {
+	display: inline-block;
+	margin-left: 10px;
+	position: relative;
+	width: 36px;
+	height: 36px;
+	background: rgba(255,255,255,.2);
+	border-radius: 20px;
+	transition: all .5s ease;
+}
+
+.socials a.vk {
+	background-image: url(../img/icons/vk.png);
+}
+.socials a.twitter {
+	background-image: url(../img/icons/twitter.png);
+}
+.socials a.facebook {
+	background-image: url(../img/icons/facebook.png);
+}
+
+.socials a {
+	width: 25px;
+	height: 25px;
+	position: relative;
+	z-index: 100;
+	display: inline-block;
+	background-size: contain;
+	top: 5.5px;
+	left: 5.5px;
+	cursor: pointer;
+}
