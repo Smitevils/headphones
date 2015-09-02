@@ -2697,10 +2697,8 @@ html, body {
   width: 100%;
   height: 100%;
   position: relative;
-  color: #fff; }
-
-div, li {
-  outline: 1px dotted red; }
+  color: #fff;
+  cursor: url(../assets/mycursor.cur), auto; }
 
 ol, ul {
   list-style: none; }
@@ -2757,11 +2755,11 @@ ol, ul {
   color: #dedede; }
 
 h1.section-text__title {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: normal; }
 
 p.section-text__text {
-  font-size: 30px; }
+  font-size: 24px; }
 
 /* logo */
 .logo {
