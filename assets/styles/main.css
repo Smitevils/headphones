@@ -2683,22 +2683,25 @@ Copyright (c) 2015 Daniel Eden
   background-image: url(../img/icons/facebook.png); }
 
 .socials a {
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   position: relative;
   z-index: 100;
   display: inline-block;
   background-size: contain;
-  top: 5.5px;
-  left: 5.5px;
+  top: 15%;
+  left: 50%;
+  margin-left: -13px;
   cursor: pointer; }
 
 html, body {
   width: 100%;
   height: 100%;
   position: relative;
-  color: #fff;
-  cursor: url(../assets/mycursor.cur), auto; }
+  color: #fff; }
+
+div, li {
+  outline: 1px dotted red; }
 
 ol, ul {
   list-style: none; }
@@ -2750,7 +2753,7 @@ ol, ul {
   padding-right: 38px;
   position: absolute;
   right: 0;
-  top: 160px;
+  top: 220px;
   font-family: "HelveticaNeueCyrLight", HelveticaNeueCyrLight, sans-serif;
   color: #dedede; }
 
@@ -2842,7 +2845,6 @@ nav {
         font-family: "HelveticaNeueCyrLight", HelveticaNeueCyrLight, sans-serif;
         font-size: 20px;
         color: #dedede;
-        text-decoration: none;
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
@@ -2931,28 +2933,198 @@ nav {
     -o-filter: saturate(200%);
     -ms-filter: saturate(200%); }
 
+.galery-slider {
+  position: absolute;
+  z-index: 9999;
+  width: 700px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto; }
+  .galery-slider img {
+    margin: 10px; }
+
 /* /galery */
 /* order */
 .order-contacts-block {
   position: absolute;
   z-index: 9999;
-  width: 60%;
+  width: 70%;
+  height: 600px;
   right: 0;
-  bottom: 80px; }
+  bottom: 140px; }
   .order-contacts-block .order-block {
+    float: left;
+    position: relative;
     width: 50%;
     text-align: center; }
     .order-contacts-block .order-block h1 {
-      font-family: "RobotoCondensedLight", RobotoCondensedLight, sans-serif;
+      font-family: "HelveticaNeueCyrLight", HelveticaNeueCyrLight, sans-serif;
       font-size: 62px;
       color: #dedede;
-      font-weight: normal; }
+      font-weight: normal;
+      margin: 10px 0; }
       .order-contacts-block .order-block h1 span {
         font-family: "RobotoCondensedBold", RobotoCondensedBold, sans-serif;
         font-weight: 800; }
     .order-contacts-block .order-block h4 {
-      font-family: "RobotoCondensedLight", RobotoCondensedLight, sans-serif;
+      font-family: "HelveticaNeueCyrLight", HelveticaNeueCyrLight, sans-serif;
       font-size: 24px;
+      font-weight: lighter;
       color: #dedede; }
+  .order-contacts-block .contacts-block {
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    text-align: left; }
+    .order-contacts-block .contacts-block .contacts-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding-left: 70px;
+      box-sizing: border-box; }
+      .order-contacts-block .contacts-block .contacts-container p {
+        position: relative;
+        font-family: "HelveticaNeueCyrRoman", HelveticaNeueCyrRoman, sans-serif;
+        font-size: 20px;
+        color: #946321; }
+      .order-contacts-block .contacts-block .contacts-container p:before {
+        content: "";
+        display: block;
+        top: 0;
+        left: -40px;
+        position: absolute; }
+      .order-contacts-block .contacts-block .contacts-container p.adress:before {
+        background: url(../img/icons/map-pin.png) center no-repeat;
+        background-size: contain;
+        width: 30px;
+        height: 40px; }
+      .order-contacts-block .contacts-block .contacts-container p.work-time:before {
+        background: url(../img/icons/clock.png) center no-repeat;
+        background-size: contain;
+        width: 30px;
+        height: 30px; }
 
 /* /order */
+/* form elements */
+form {
+  text-align: left; }
+
+input, textarea {
+  color: #dedede;
+  background-color: transparent;
+  border: 1px solid #dedede;
+  padding: 8px 20px;
+  outline: none;
+  font-family: "HelveticaNeueCyrLight", HelveticaNeueCyrLight, sans-serif;
+  font-size: 18px;
+  box-sizing: border-box; }
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 90px;
+  display: block; }
+
+input[type="submit"] {
+  padding: 8px 66px;
+  border: 3px solid #946321;
+  color: #946321;
+  font-family: "HelveticaNeueCyrBold", HelveticaNeueCyrBold, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  float: right; }
+
+/* /form elements */
+.request {
+  display: none;
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  font-family: "HelveticaNeueCyrLight", HelveticaNeueCyrLight, sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #fff; }
+
+/****************************************************/
+@media screen and (max-width: 1400px) {
+  .section-text {
+    top: 120px;
+    width: 440px; }
+
+  h1.section-text__title {
+    font-size: 60px;
+    font-weight: normal; }
+
+  p.section-text__text {
+    font-size: 20px; }
+
+  /**/
+  nav {
+    margin-top: -140px; }
+
+  nav ul li {
+    height: 70px; }
+
+  nav ul li.characteristics {
+    background-size: 70px 70px; }
+    nav ul li.characteristics:hover {
+      background-size: 70px 70px; }
+    nav ul li.characteristics.active {
+      background-size: 70px 70px; }
+
+  nav ul li.technical {
+    background-size: 70px 70px; }
+    nav ul li.technical:hover {
+      background-size: 70px 70px; }
+    nav ul li.technical.active {
+      background-size: 70px 70px; }
+
+  nav ul li.photos {
+    background-size: 70px 70px; }
+    nav ul li.photos:hover {
+      background-size: 70px 70px; }
+    nav ul li.photos.active {
+      background-size: 70px 70px; }
+
+  nav ul li.order {
+    background-size: 70px 70px; }
+    nav ul li.order:hover {
+      background-size: 70px 70px; }
+    nav ul li.order.active {
+      background-size: 70px 70px; }
+
+  nav ul li a {
+    line-height: 70px;
+    padding-left: 65px; }
+
+  /**************************/
+  .galery {
+    display: none; }
+
+  /************************/
+  .order-contacts-block {
+    bottom: 100px;
+    height: 400px; }
+
+  .order-contacts-block .order-block h1 {
+    font-size: 32px;
+    margin: 0; }
+
+  .order-contacts-block .order-block h4 {
+    margin: 10px 0; } }
+@media screen and (max-width: 1000px) {
+  .galery-slider {
+    width: 500px; } }
+@media screen and (max-width: 600px) {
+  .galery-slider {
+    width: 200px; } }

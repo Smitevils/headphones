@@ -1,0 +1,54 @@
+@media screen and (max-width: 1400px) {
+	.section-text {top: 120px; width: 440px;}
+	h1.section-text__title {
+		font-size: 60px;
+		font-weight: normal;
+	}
+	p.section-text__text {
+		font-size: 20px;
+	}
+	/**/
+	nav {
+		margin-top: -140px;
+	}
+	nav ul li {
+		height: 70px;
+	}
+	nav ul li.characteristics {
+		background-size: 70px 70px;
+		&:hover {background-size: 70px 70px;}
+		&.active {background-size: 70px 70px;}
+	}
+	nav ul li.technical {
+		background-size: 70px 70px;
+		&:hover {background-size: 70px 70px;}
+		&.active {background-size: 70px 70px;}
+	}
+	nav ul li.photos {
+		background-size: 70px 70px;
+		&:hover {background-size: 70px 70px;}
+		&.active {background-size: 70px 70px;}
+	}
+	nav ul li.order {
+		background-size: 70px 70px;
+		&:hover {background-size: 70px 70px;}
+		&.active {background-size: 70px 70px;}
+	}
+	nav ul li a { line-height: 70px; padding-left: 65px;}
+	/**************************/
+	.galery {
+		display: none;
+	}
+	/************************/
+	.order-contacts-block {bottom: 100px; height: 400px;}
+	.order-contacts-block .order-block h1 {font-size: 32px; margin: 0;}
+	.order-contacts-block .order-block h4 {margin: 10px 0;}
+}
+
+@media screen and (max-width: 1000px) {
+	.galery-slider {width: 500px;}
+}
+
+@media screen and (max-width: 600px) {
+	.galery-slider {width: 200px;}
+}

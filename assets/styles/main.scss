@@ -10,10 +10,9 @@
 
 html,body {
 	width: 100%; height: 100%; position: relative; color: #fff;
-	cursor : url(../assets/mycursor.cur), auto;
 }
 
-//div,li {outline: 1px dotted red;}
+div,li {outline: 1px dotted red;}
 
 ol, ul {
 	list-style: none;
@@ -44,7 +43,7 @@ visibility: hidden;
 
 .section-text {
 	width: 540px; padding-right: 38px;
-	position: absolute; right: 0; top: 160px;
+	position: absolute; right: 0; top: 220px;
 	@include HelveticaNeueCyrLight;
 	color: $section-font-color;
 }
@@ -112,7 +111,6 @@ nav {
 				@include HelveticaNeueCyrLight;
 				font-size: 20px;
 				color: $nav-font-color;
-				text-decoration: none;
 				-webkit-transition: all 0.3s;
 				-o-transition: all 0.3s;
 				transition: all 0.3s;
@@ -173,26 +171,108 @@ nav {
 	}
 }
 
+.galery-slider {
+	position: absolute; z-index: 9999;
+	width: 700px; top: 0; left: 0; bottom: 0; right: 0; margin: auto;
+	img {margin: 10px;}
+}
+
 /* /galery */
 
 /* order */
 	.order-contacts-block {
-		position: absolute; z-index: 9999; width: 60%;
-		right: 0; bottom: 80px;
+		position: absolute; z-index: 9999; width: 70%; height: 600px;
+		right: 0; bottom: 140px;
 		.order-block {
+			float: left; position: relative;
 			width: 50%; text-align: center;
 			h1 {
-				@include RobotoCondensedLight;
+				@include HelveticaNeueCyrLight;
 				font-size: 62px;
 				color: $order-h1-font-color;
 				font-weight: normal;
+				margin: 10px 0;
 				span {@include RobotoCondensedBold; font-weight: 800;}
 			}
 			h4 {
-				@include RobotoCondensedLight;
-				font-size: 24px;
+				@include HelveticaNeueCyrLight;
+				font-size: 24px; font-weight: lighter;
 				color: $order-h4-font-color;
+			}
+		}
+		.contacts-block {
+			float: left; position: relative;
+			width: 50%; height: 100%; text-align: left;
+			.contacts-container {
+				position: absolute; bottom: 0; left: 0; width: 100%; padding-left: 70px; box-sizing: border-box;
+				p {
+					position: relative;
+					@include HelveticaNeueCyrRoman;
+					font-size: 20px;
+					color: $adress-font-color;
+				}
+				p:before {
+					content: "";
+					display: block;
+					top: 0; left: -40px;
+					position: absolute;
+				}
+				p.adress:before {
+					background: url(../img/icons/map-pin.png) center no-repeat;
+					background-size: contain;
+					width: 30px; height: 40px;
+				}
+				p.work-time:before {
+					background: url(../img/icons/clock.png) center no-repeat;
+					background-size: contain;
+					width: 30px; height: 30px;
+				}
 			}
 		}
 	}
 /* /order */
+
+/* form elements */
+
+form {
+	text-align: left;
+}
+
+input, textarea {
+	color: $input-font-color;
+	background-color: transparent;
+	border: 1px solid $input-border-color;
+	padding: 8px 20px;
+	outline: none;
+	@include HelveticaNeueCyrLight;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+textarea {
+	resize: none; width: 100%; height: 90px; display: block;
+}
+
+input[type="submit"] {
+	padding: 8px 66px;
+	// Цвета как у другой кнопки - они одинаковы
+	border: 3px solid $border-button-color;
+	color: $button-font-color;
+	//
+	@include HelveticaNeueCyrBold; font-size: 20px; text-decoration: none;
+	cursor: pointer;
+	float: right;
+}
+
+/* /form elements */
+
+.request {
+	display: none;
+	width: 280px; height: 100px; position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto;
+	@include HelveticaNeueCyrLight; font-weight: normal;
+	font-size: 40px; color: $form-complite-font-color;
+}
+
+/****************************************************/
+
+@import "adaptive";
